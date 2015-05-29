@@ -1,0 +1,36 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - db/**/*
+    - bin/**
+  RunRailsCops: true
+
+BlockComments:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
+
+PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%': '{}'
+
+SignalException:
+  Enabled: false
+
+UnusedBlockArgument:
+  Enabled: false
+
+AssignmentInCondition:
+  Enabled: false
+
+NumericLiterals:
+  MinDigits: 10

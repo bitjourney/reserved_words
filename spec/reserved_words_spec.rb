@@ -10,9 +10,18 @@ RSpec.describe ReservedWords do
   end
 
   describe '.add' do
-    it 'adds the word to reserved words' do
-      ReservedWords.add('blog')
-      expect(ReservedWords.list).to eq %w(admin api blog image rss www)
+    context 'when a word is passed' do
+      it 'adds the word to reserved words' do
+        ReservedWords.add('blog')
+        expect(ReservedWords.list).to eq %w(admin api blog image rss www)
+      end
+    end
+
+    context 'when words are passed' do
+      it 'adds the words to reserved words' do
+        ReservedWords.add(%w(blog public))
+        expect(ReservedWords.list).to eq %w(admin api blog image public rss www)
+      end
     end
   end
 

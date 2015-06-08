@@ -1,4 +1,4 @@
-# ReservedWords
+# ReservedWords [![Build Status](https://circleci.com/gh/bitjourney/reserved_words.png?style=shield&circle-token=6aea11a27836a75133fa0223160879f413efdc2a)](http://travis-ci.org/bitjourney/reserved_words)
 
 Reserve words for your system
 

@@ -1,3 +1,4 @@
+require 'active_support/core_ext/array'
 require 'reserved_words/version'
 
 module ReservedWords
@@ -10,7 +11,7 @@ module ReservedWords
   end
 
   def self.add(word)
-    @reserved_words.tap { |reserved_words| reserved_words << word }.sort!
+    @reserved_words.concat(Array.wrap(word)).sort!
   end
 
   def self.remove(word)

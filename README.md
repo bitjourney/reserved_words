@@ -32,6 +32,9 @@ Add your own word
 ```ruby
 [1] pry(main)> ReservedWords.add('blog')
 => ["admin", "api", "blog", "image", "rss", "www"]
+
+[1] pry(main)> ReservedWords.add(['blog', 'public'])
+=> ["admin", "api", "blog", "image", "public", "rss", "www"]
 ```
 
 Remove word

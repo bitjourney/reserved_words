@@ -5,12 +5,12 @@ require 'reserved_words/version'
 Gem::Specification.new do |spec|
   spec.name          = 'reserved_words'
   spec.version       = ReservedWords::VERSION
-  spec.authors       = ['Masahiro Ihara']
-  spec.email         = ['ihara2525@gmail.com']
+  spec.authors       = ['Masahiro Ihara', 'Takaya Deguchi']
+  spec.email         = ['ihara2525@gmail.com', 'dex1t@degoo.org']
 
   spec.summary       = 'Simple library to keep reserved words'
   spec.description   = 'Simple library to keep reserved words'
-  spec.homepage      = 'https://github.com/ihara2525/reserved_words'
+  spec.homepage      = 'https://github.com/bitjourney/reserved_words'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

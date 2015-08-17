@@ -2,7 +2,7 @@ require 'active_support/core_ext/array'
 require 'reserved_words/version'
 
 module ReservedWords
-  DEFAULT_WORDS = %w(admin api image rss www)
+  DEFAULT_WORDS = %w(admin api image rss www cdn)
 
   @reserved_words = DEFAULT_WORDS.dup
 

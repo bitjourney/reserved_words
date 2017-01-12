@@ -5,8 +5,8 @@ require 'reserved_words/version'
 Gem::Specification.new do |spec|
   spec.name          = 'reserved_words'
   spec.version       = ReservedWords::VERSION
-  spec.authors       = ['Masahiro Ihara', 'Takaya Deguchi']
-  spec.email         = ['ihara2525@gmail.com', 'dex1t@degoo.org']
+  spec.authors       = ['Masahiro Ihara', 'Takaya Deguchi', 'Kenju Wagatsuma']
+  spec.email         = ['ihara2525@gmail.com', 'dex1t@degoo.org', 'kenju-wagatsuma@bitjourney.com']
 
   spec.summary       = 'Simple library to keep reserved words'
   spec.description   = 'Simple library to keep reserved words'

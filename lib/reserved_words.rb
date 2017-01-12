@@ -5,7 +5,7 @@ require 'reserved_words/version'
 module ReservedWords
   DEFAULT_WORDS = %w(admin api image rss www cdn)
 
-  @reserved_words = Set.new DEFAULT_WORDS.dup
+  @reserved_words = SortedSet.new DEFAULT_WORDS.dup
 
   def self.list
     @reserved_words.to_a
@@ -20,6 +20,6 @@ module ReservedWords
   end
 
   def self.clear!
-    @reserved_words = Set.new DEFAULT_WORDS.dup
+    @reserved_words = SortedSet.new DEFAULT_WORDS.dup
   end
 end

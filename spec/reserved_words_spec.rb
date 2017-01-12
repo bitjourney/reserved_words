@@ -6,7 +6,7 @@ RSpec.describe ReservedWords do
   before { ReservedWords.clear! }
 
   describe '.list' do
-    it 'returns initial reserved words' do
+    it 'returns sorted reserved words' do
       expect(ReservedWords.list).to eq default_words.sort!
     end
 

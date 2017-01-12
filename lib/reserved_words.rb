@@ -7,7 +7,7 @@ module ReservedWords
   @reserved_words = DEFAULT_WORDS.dup
 
   def self.list
-    @reserved_words
+    @reserved_words.uniq
   end
 
   def self.add(word)

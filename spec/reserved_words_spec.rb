@@ -6,8 +6,14 @@ RSpec.describe ReservedWords do
   before { ReservedWords.clear! }
 
   describe '.list' do
-    it 'returns initial reserved words' do
-      expect(ReservedWords.list).to eq default_words
+    it 'returns sorted reserved words' do
+      expect(ReservedWords.list).to eq default_words.sort!
+    end
+
+    it 'should not return duplicate reserved words' do
+      initial_count = ReservedWords.list.count
+      ReservedWords.add(ReservedWords.list.first)
+      expect(ReservedWords.list.count).to eq initial_count
     end
   end
 

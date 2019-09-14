@@ -55,7 +55,7 @@ If you are using Rails, `config/initializers/reserved_words.rb` is a good place 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/reserved_words/fork )
+1. Fork it ( https://github.com/bitjourney/reserved_words/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

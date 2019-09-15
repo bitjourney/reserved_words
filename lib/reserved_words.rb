@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'set'
 require 'active_support/core_ext/array'
 require 'reserved_words/version'
 
 module ReservedWords
-  DEFAULT_WORDS = %w(admin api image rss www cdn)
+  DEFAULT_WORDS = %w[admin api image rss www cdn].freeze
 
   @reserved_words = SortedSet.new DEFAULT_WORDS.dup
 

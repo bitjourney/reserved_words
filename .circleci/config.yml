@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6
+    steps:
+      - checkout
+
+      # Restore bundle cache
+      - type: cache-restore
+        key: reserved_words-{{ checksum "Gemfile.lock" }}
+
+      # Bundle install dependencies
+      - run: bundle install --path vendor/bundle
+
+      # Store bundle cache
+      - type: cache-save
+        key: reserved_words-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
+      # Run test and rubocop
+      - command: bundle exec rake
+      - command: bundle exec rubocop

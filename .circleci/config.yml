@@ -20,5 +20,7 @@ jobs:
           - vendor/bundle
 
       # Run test and rubocop
-      - command: bundle exec rake
-      - command: bundle exec rubocop
+      - run:
+          command: bundle exec rake
+      - run:
+          command: bundle exec rubocop

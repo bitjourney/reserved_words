@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe ReservedWords do
-  let(:default_words) { %w(admin api image rss www cdn) }
+  let(:default_words) { %w[admin api image rss www cdn] }
 
   before { ReservedWords.clear! }
 
@@ -27,7 +29,7 @@ RSpec.describe ReservedWords do
 
     context 'when words are passed' do
       it 'adds the words to reserved words' do
-        ReservedWords.add(%w(blog public))
+        ReservedWords.add(%w[blog public])
         expect(ReservedWords.list).to eq default_words.push('blog', 'public').sort!
       end
     end

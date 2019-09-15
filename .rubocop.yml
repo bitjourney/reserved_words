@@ -5,7 +5,7 @@ AllCops:
     - vendor/**/*
     - db/**/*
     - bin/**
-  RunRailsCops: true
+  TargetRubyVersion: 2.6
 
 BlockComments:
   Enabled: false
